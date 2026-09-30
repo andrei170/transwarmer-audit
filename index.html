@@ -130,7 +130,7 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
       <div class="row"><div><div class="rname">Main heading</div><div class="sc">Two separate sentences run together with no space between them</div></div><div class="badge gF">F</div></div>
       <div class="row"><div><div class="rname">Homepage subheadings</div><div class="sc">936 words and not a single H2 anywhere on the page</div></div><div class="badge gF">F</div></div>
       <div class="row"><div><div class="rname">Enquiry form on the homepage</div><div class="sc">None. The only form on the site is on the about and contact page.</div></div><div class="badge gD">D</div></div>
-      <div class="row"><div><div class="rname">Canonical tag</div><div class="sc">Missing</div></div><div class="badge gD">D</div></div>
+      <div class="row"><div><div class="rname">Canonical tag</div><div class="sc">Present and correct</div></div><div class="badge gA">A</div></div>
       <div class="row"><div><div class="rname">Recruitment</div><div class="sc">No careers page, no vacancies, nothing aimed at a fitter</div></div><div class="badge gF">F</div></div>
       <div class="row"><div><div class="rname">Conversion tracking</div><div class="sc">GA4 present, but no conversion events and no Google Ads tag</div></div><div class="badge gC">C&minus;</div></div>
       <div class="row"><div><div class="rname">Site depth</div><div class="sc">Four real pages. Recent Work 581 words, About &amp; Contact 420.</div></div><div class="badge gC">C</div></div>
@@ -154,18 +154,24 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
     <div class="code">
   THE H1 SERVED ON YOUR HOMEPAGE, 30 SEPTEMBER 2026
 
-  "New Warm Roof Benefits<span class="ph">A</span> SupaLite Tiled Roof System will
-   transform your conservatory into a beau..."
+  <span class="ph">&lt;h1&gt;</span>New Warm Roof Benefits<span class="ph">&lt;/h2&gt;</span>&lt;p class="..."&gt;A SupaLite
+  Tiled Roof System will transform your conservatory...
 
-  <span class="ph">"Benefits" and "A SupaLite" have run together.
-   There is no space and no break between them.</span>
+  <span class="ph">The heading is OPENED as an h1 and CLOSED as an h2.
+   The tags do not match, so the paragraph after it gets
+   swallowed into the heading.</span>
+
+  A visitor reads:  "New Warm Roof Benefits<span class="ph">A</span> SupaLite Tiled Roof..."
 
   H2 headings on the page:  <span class="ph">0</span>
     </div>
     <div class="warn">
       <div class="lab">Two headings have collapsed into one</div>
-      <p><b>&ldquo;New Warm Roof Benefits&rdquo; was meant to be a heading and the SupaLite sentence was meant to be
-      the text underneath it.</b> They have ended up as a single run-on line, which is why it reads oddly.</p>
+      <p><b>&ldquo;New Warm Roof Benefits&rdquo; was meant to be the heading and the SupaLite sentence the text
+      underneath it.</b> The heading is opened with an h1 tag and closed with an h2 tag, so the browser never sees
+      the heading end and pulls the paragraph up into it.</p>
+      <p><b>That is a markup fault rather than a typing mistake</b>, which is worth knowing because it means whoever
+      edits the page will not spot it in the visual editor. It has to be fixed in the code.</p>
       <p><b>The H1 is the most important line on any page</b>, both for somebody landing on it and for search
       engines working out what the page is about. Yours currently reads as a typo.</p>
       <p><b>It is a few minutes in the page editor.</b> Like the rest of Finding 1 in every audit we write, we would
@@ -190,7 +196,7 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
   /about-contact-us          <span class="ok">1</span>
   /customers  (Recent Work)  <span class="ph">0</span>
 
-  Canonical tag on the homepage:  <span class="ph">MISSING</span>
+  Canonical tag on the homepage:  <span class="ok">present and correct</span>
     </div>
     <div class="flag">
       <div class="lab">Nine click-to-call links is genuinely good, and it is not the whole answer</div>
@@ -285,7 +291,6 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
       is wrong.</li>
       <li><b>Add call tracking and conversion events to the GA4 you already have.</b> One-off, and every later
       decision depends on it.</li>
-      <li><b>Add the canonical tag.</b> Small, technical, five minutes.</li>
       <li><b>Do not buy lead generation yet.</b> You want fewer hours, not more jobs you personally have to run.</li>
     </ul>
     <div class="flag">
