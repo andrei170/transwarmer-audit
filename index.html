@@ -1,0 +1,330 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+<title>Digital Presence Audit &middot; Transwarmer Conservatories Ltd &middot; AG1 Consulting</title><style>
+:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--mut:#9aa7b4;--line:#2a3340;--accent:#2f81f7;
+  --good:#3fb950;--bad:#f85149;--gradF:#f85149;--gradD:#e8702a;--gradC:#d29922;--gradB:#3fb950;--gradA:#2ea043;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--mut);font-weight:600}
+header{padding:46px 0 28px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 70% -10%,rgba(47,129,247,.18),transparent)}
+h1{font-size:30px;font-weight:800;margin:10px 0 6px;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:15px}
+.hero{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin:34px 0 8px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
+.gradecard{border:1px solid var(--line);border-radius:18px;padding:26px;text-align:center;position:relative;overflow:hidden}
+.gc-F{background:linear-gradient(160deg,#2a1410,#1c2330)}.gc-D{background:linear-gradient(160deg,#2a1c10,#1c2330)}
+.gc-C{background:linear-gradient(160deg,#2a2410,#1c2330)}.gc-B{background:linear-gradient(160deg,#102a1a,#1c2330)}
+.bigletter{font-size:96px;font-weight:900;line-height:1;position:relative}
+.bl-F{color:var(--gradF);text-shadow:0 0 40px rgba(248,81,73,.45)}
+.bl-D{color:var(--gradD);text-shadow:0 0 40px rgba(232,112,42,.45)}
+.bl-C{color:var(--gradC);text-shadow:0 0 40px rgba(210,153,34,.45)}
+.score100{font-size:18px;color:var(--mut);margin-top:6px;position:relative}
+.heroread h2{font-size:21px;font-weight:800;margin-bottom:10px}
+.heroread p{color:var(--mut);font-size:15.5px}
+.heroread .tag{display:inline-block;margin-top:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--ink);background:var(--panel)}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.h{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.rname{font-weight:600;font-size:15px}
+.bar{height:7px;background:#0b0f15;border-radius:99px;margin-top:9px;overflow:hidden}
+.fill{height:100%;border-radius:99px}
+.badge{font-weight:800;font-size:15px;min-width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#0d1117}
+.gF{background:var(--gradF)}.gD{background:var(--gradD)}.gC{background:var(--gradC)}.gB{background:var(--gradB);color:#06210f}.gA{background:var(--gradA);color:#06210f}
+.sc{font-size:12px;color:var(--mut);margin-top:3px}
+.flag{background:linear-gradient(160deg,#2a1410,#161b22);border:1px solid #6f2a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.flag .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--bad);font-weight:700;margin-bottom:8px}
+.win{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.win .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--good);font-weight:700;margin-bottom:8px}
+.warn{background:linear-gradient(160deg,#2a2410,#161b22);border:1px solid #6f5a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.warn .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gradC);font-weight:700;margin-bottom:8px}
+.flag p,.win p,.warn p{color:var(--mut);font-size:14.5px;margin-bottom:9px}
+.flag p:last-child,.win p:last-child,.warn p:last-child{margin-bottom:0}
+.flag b,.win b,.warn b{color:var(--ink)}
+.flag ul,.win ul,.warn ul{margin:0 0 9px 20px;color:var(--mut);font-size:14.5px}
+.flag li,.win li,.warn li{margin-bottom:6px}
+.code{background:#0b0f15;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;line-height:1.85;color:var(--mut);overflow-x:auto}
+.code .ph{color:#ff9d94;font-weight:700}.code .ok{color:#84e0a8;font-weight:700}.code .c{color:#5b6672}
+.cmp{width:100%;border-collapse:collapse;font-size:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.cmp th{text-align:left;padding:11px 14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid var(--line);font-weight:700}
+.cmp td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--mut);vertical-align:top}
+.cmp tr:last-child td{border-bottom:none}.cmp td b{color:var(--ink)}.cmp tr.you td{background:#241a12}
+.cmp .yes{color:var(--good);font-weight:700}.cmp .no{color:var(--bad);font-weight:700}
+.opp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.opp{grid-template-columns:1fr}}
+.ocard{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px;text-align:center}
+.ocard .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
+.ocard .big{font-size:30px;font-weight:900;color:var(--good);margin:8px 0 2px}
+.ocard .small{font-size:13px;color:var(--mut)}
+.oppnote{color:var(--mut);font-size:14px;margin-top:14px}.oppnote b{color:var(--ink)}
+.arrow{display:flex;align-items:center;justify-content:center;gap:18px;margin:6px 0 2px;flex-wrap:wrap}
+.pill{font-size:60px;font-weight:900;line-height:1}
+.pill.from-F{color:var(--gradF)}.pill.from-D{color:var(--gradD)}.pill.from-C{color:var(--gradC)}
+.pill.to{color:var(--gradA)}
+.pilllab{font-size:12px;color:var(--mut);text-align:center;text-transform:uppercase;letter-spacing:.1em}
+.ar{font-size:34px;color:var(--mut)}
+ul.road{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:760px){ul.road{grid-template-columns:1fr}}
+ul.road li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:11px 14px;font-size:14.5px}
+.road2 li{border-left-color:var(--good)}
+.cta{text-align:center;padding:40px 0 56px}
+.cta h2{font-size:22px;font-weight:800;margin-bottom:8px}
+.cta p{color:var(--mut);font-size:15px}
+footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;line-height:1.7}
+.gscale{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 20px;margin-top:16px}
+.gscale .gtitle{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);font-weight:700;margin-bottom:26px;text-align:center}
+.gtrack{position:relative;height:14px;border-radius:8px;background:linear-gradient(90deg,#f85149 0%,#f85149 18%,#e3833c 34%,#d4a72c 52%,#7ec46a 74%,#3fb950 100%);margin:0 4px}
+.gmark{position:absolute;top:-46px;transform:translateX(-50%);text-align:center;white-space:nowrap}
+.gmark .gm-lab{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);font-weight:700}
+.gmark .gm-val{font-size:19px;font-weight:900;line-height:1.15}
+.gmark:after{content:"";position:absolute;left:50%;top:100%;width:2px;height:22px;transform:translateX(-50%);background:currentColor;opacity:.75}
+.gmark.now{color:var(--bad)}.gmark.now .gm-val{color:var(--bad)}
+.gmark.proj{color:var(--good)}.gmark.proj .gm-val{color:var(--good)}
+.gmark.proj{top:auto;bottom:-52px}
+.gmark.proj:after{top:auto;bottom:100%}
+.gdot{position:absolute;top:50%;width:16px;height:16px;border-radius:50%;transform:translate(-50%,-50%);border:3px solid #0d1117}
+.gdot.now{background:var(--bad)}.gdot.proj{background:var(--good)}
+.gticks{display:flex;justify-content:space-between;margin:66px 4px 0;font-size:11px;letter-spacing:.08em;color:var(--mut);font-weight:700}
+@media(max-width:620px){.gmark .gm-lab{font-size:9px}.gmark .gm-val{font-size:16px}}
+
+/* ---------- injected asset nav ---------- */
+/* display/padding/margin are declared explicitly so a page carrying its own bare
+   nav{} element rule (concept mockups do) cannot restyle the AG1 bar. */
+.agnav{display:block;padding:0;margin:0;position:sticky;top:0;z-index:80;background:rgba(13,17,23,.92);backdrop-filter:saturate(1.5) blur(10px);border-bottom:1px solid var(--line)}
+.agnav .inner{max-width:1080px;margin:0 auto;padding:0 22px;display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.agnav a{display:inline-block;padding:12px 14px;font-size:14px;font-weight:600;color:var(--mut);text-decoration:none;border-bottom:2px solid transparent;transition:color .15s,border-color .15s}
+.agnav a:hover{color:var(--ink);border-bottom-color:var(--accent)}
+.agnav a.on{color:var(--ink);border-bottom-color:var(--accent)}
+.agnav a.ext{color:var(--accent)}
+.agnav a.ext:hover{color:#fff}
+@media(max-width:560px){.agnav .inner{padding:0 14px}.agnav a{padding:10px 9px;font-size:13px}}
+</style></head><body>
+<nav class="agnav"><div class="inner"><a href="assets.html">All Assets</a><a href="./" class="on">Audit</a><a href="https://andrei170.github.io/transwarmer-demo/">Concept Page</a></div></nav>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Digital Presence Audit &middot; Transwarmer Conservatories Ltd &middot; Barwell, Leicestershire</div>
+    <h1>You Want To Go From Forty Hours A Week To Ten. Almost Nothing In This Document Is About Getting You More Enquiries.</h1>
+    <div class="sub">Prepared for Andrew Perridge &middot; 30 September 2026 &middot; AG1 Consulting</div>
+
+    <div class="hero">
+      <div class="heroread">
+        <h2>You told Elijah you need three more good people, not three more jobs a week.</h2>
+        <p><b>At one to three clients a week and &pound;10,000 to &pound;12,000 a job, you are not short of
+        revenue per customer.</b> You are short of hands, and of a business that runs without you standing in it.</p>
+        <p><b>There is one thing on your homepage that is simply broken</b>, and it is the first finding. It takes
+        minutes to fix and it does not need us.</p>
+        <div class="tag">Measured from transwarmerconservatories.co.uk on 30 September 2026 &bull; Barwell, Leicestershire LE9 8GP</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="h">The Scorecard</div>
+    <div class="rows">
+      <div class="row"><div><div class="rname">Main heading</div><div class="sc">Two separate sentences run together with no space between them</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Homepage subheadings</div><div class="sc">936 words and not a single H2 anywhere on the page</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Enquiry form on the homepage</div><div class="sc">None. The only form on the site is on the about and contact page.</div></div><div class="badge gD">D</div></div>
+      <div class="row"><div><div class="rname">Canonical tag</div><div class="sc">Missing</div></div><div class="badge gD">D</div></div>
+      <div class="row"><div><div class="rname">Recruitment</div><div class="sc">No careers page, no vacancies, nothing aimed at a fitter</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Conversion tracking</div><div class="sc">GA4 present, but no conversion events and no Google Ads tag</div></div><div class="badge gC">C&minus;</div></div>
+      <div class="row"><div><div class="rname">Site depth</div><div class="sc">Four real pages. Recent Work 581 words, About &amp; Contact 420.</div></div><div class="badge gC">C</div></div>
+      <div class="row"><div><div class="rname">Click-to-call</div><div class="sc">Nine tap-to-dial links. Very strong.</div></div><div class="badge gA">A</div></div>
+      <div class="row"><div><div class="rname">Homepage depth</div><div class="sc">936 words, which is more than most firms in this trade publish</div></div><div class="badge gB">B+</div></div>
+      <div class="row"><div><div class="rname">Structured data</div><div class="sc">LocalBusiness with address, hours and coordinates all correct</div></div><div class="badge gA">A</div></div>
+      <div class="row"><div><div class="rname">Analytics installed</div><div class="sc">GA4 live and firing</div></div><div class="badge gB">B</div></div>
+    </div>
+    <div class="flag">
+      <div class="lab">The foundations are sound</div>
+      <p><b>Correct local business markup, nine click-to-call links, GA4 installed and more words on the homepage
+      than most of this trade bothers with.</b> Somebody set this up with some care.</p>
+      <p><b>What is wrong is mostly presentation and structure</b>, and one item is a straight bug.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 1 &mdash; Your Main Heading Has Two Sentences Stuck Together</div>
+    <div class="code">
+  THE H1 SERVED ON YOUR HOMEPAGE, 30 SEPTEMBER 2026
+
+  "New Warm Roof Benefits<span class="ph">A</span> SupaLite Tiled Roof System will
+   transform your conservatory into a beau..."
+
+  <span class="ph">"Benefits" and "A SupaLite" have run together.
+   There is no space and no break between them.</span>
+
+  H2 headings on the page:  <span class="ph">0</span>
+    </div>
+    <div class="warn">
+      <div class="lab">Two headings have collapsed into one</div>
+      <p><b>&ldquo;New Warm Roof Benefits&rdquo; was meant to be a heading and the SupaLite sentence was meant to be
+      the text underneath it.</b> They have ended up as a single run-on line, which is why it reads oddly.</p>
+      <p><b>The H1 is the most important line on any page</b>, both for somebody landing on it and for search
+      engines working out what the page is about. Yours currently reads as a typo.</p>
+      <p><b>It is a few minutes in the page editor.</b> Like the rest of Finding 1 in every audit we write, we would
+      rather you knew about it than we saved it for a pitch.</p>
+    </div>
+    <div class="flag">
+      <div class="lab">And there are no subheadings at all</div>
+      <p><b>936 words with zero H2 headings.</b> Nobody scanning that page can find the TapcoSlate section, the
+      ExtraLight section or the SkyVista glass panels, because there is nothing to scan by.</p>
+      <p><b>The content is there and it is decent.</b> It just has no structure over the top of it.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 2 &mdash; Somebody On Your Homepage At Ten At Night Has To Remember To Ring You</div>
+    <div class="code">
+  FORMS ON THE SITE
+
+  /  (homepage)              <span class="ph">0</span>      936 words, nine phone links, no form
+  /about-contact-us          <span class="ok">1</span>
+  /customers  (Recent Work)  <span class="ph">0</span>
+
+  Canonical tag on the homepage:  <span class="ph">MISSING</span>
+    </div>
+    <div class="flag">
+      <div class="lab">Nine click-to-call links is genuinely good, and it is not the whole answer</div>
+      <p><b>For this trade the phone is right and you have made it easy.</b> Somebody ready to talk can tap and
+      dial from anywhere on the page.</p>
+      <p><b>A conservatory roof is rarely a same-day decision.</b> It gets researched in the evening, discussed with
+      a partner, and revisited. That person often is not ready to ring, and on your homepage there is nothing else
+      for them to do.</p>
+      <p><b>They have to find the about and contact page to write to you.</b> Most will not bother.</p>
+    </div>
+    <div class="win">
+      <div class="lab">Why this matters more for you than for most</div>
+      <p><b>You told Elijah you want your own week down to ten hours.</b> Enquiries that arrive in writing, with the
+      detail already in them, are the ones you can hand to somebody else. Phone calls are the ones that have to come
+      through you.</p>
+      <p><b>A form is not just about capturing more. It is about capturing them in a form somebody else can
+      action.</b> That is the thread running through this whole document.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 3 &mdash; Nothing Here Is Aimed At The Three People You Want To Hire</div>
+    <div class="code">
+  WHAT YOU TOLD ELIJAH
+
+  "doesn't have enough quality staffing behind him to handle more jobs"
+  "staffing are not committed neither got the skillset he needs"
+  <span class="ok">"current staffing is 3 to 5, wants to get an extra 3 quality
+   and committed"</span>
+  <span class="ok">Goal: reduce his own week from 40 hours to 1-10 hours</span>
+
+  WHAT THE SITE OFFERS SOMEBODY LOOKING FOR THAT WORK
+
+  Careers or vacancies page     <span class="ph">none</span>
+  Anything about the team       <span class="ph">none found</span>
+  Pay, hours, how to apply      <span class="ph">nothing</span>
+    </div>
+    <div class="warn">
+      <div class="lab">This is the constraint, and there is nothing pointed at it</div>
+      <p><b>You have been stuck on this for a few years by your own account, and the website has never addressed
+      it.</b> Every word on it speaks to a homeowner.</p>
+      <p><b>A fitter deciding where to work looks a firm up the same way a customer does.</b> A firm with a page
+      that says what the work is, what it pays and who to ring is a rarity in this trade, and it is cheap to build.</p>
+    </div>
+    <div class="flag">
+      <div class="lab">The uncomfortable arithmetic, from your own numbers</div>
+      <p><b>One to three jobs a week at &pound;10,000 to &pound;12,000 is a real business already.</b> Adding
+      enquiries to a business that cannot fit the ones it has does not get you to a ten hour week. It gets you to a
+      longer one.</p>
+      <p><b>We would rather say that on a Sunday morning than sell you a campaign.</b></p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 4 &mdash; You Have Analytics But You Cannot Tell What Produces A Job</div>
+    <div class="code">
+  TAGS FOUND
+
+  Google Analytics 4        <span class="ok">G-QXGVQFVB0R</span>   present
+  gtag()                    <span class="ok">present</span>
+
+  Google Ads conversion     <span class="ph">not found</span>
+  Meta pixel                <span class="ph">not found</span>
+  Tag Manager               <span class="ph">not found</span>
+  Conversion events         <span class="ph">none identified</span>
+    </div>
+    <div class="win">
+      <div class="lab">You are ahead of most of this trade already</div>
+      <p><b>GA4 is installed and collecting, which most firms this size have not managed.</b> You can see how many
+      people arrive.</p>
+      <p><b>What is missing is the step that turns a visit into a recorded event.</b> With nine phone links and no
+      call tracking, nothing connects a visit to a call to a job. So the question &ldquo;where did that job come
+      from?&rdquo; still gets answered by memory.</p>
+      <p><b>That is a one-off setup, not a monthly.</b> And it is worth doing before any spending decision, not
+      after.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">What We Would Do, In Order</div>
+    <ul class="road">
+      <li><b>Fix the run-on heading and add subheadings.</b> Minutes of work, free, and it does not need us.</li>
+      <li><b>Put a form on the homepage</b> &mdash; not to get more enquiries, but to get them in a written form
+      somebody other than you can pick up.</li>
+      <li><b>Build the recruitment page.</b> This is the only item on the list aimed at what you actually told us
+      is wrong.</li>
+      <li><b>Add call tracking and conversion events to the GA4 you already have.</b> One-off, and every later
+      decision depends on it.</li>
+      <li><b>Add the canonical tag.</b> Small, technical, five minutes.</li>
+      <li><b>Do not buy lead generation yet.</b> You want fewer hours, not more jobs you personally have to run.</li>
+    </ul>
+    <div class="flag">
+      <div class="lab">The question for Sunday</div>
+      <p><b>If three committed, skilled fitters started next month, what would actually have to change for your week
+      to drop to ten hours?</b></p>
+      <p><b>If the honest answer is that everything still routes through you, then the job is the systems rather
+      than the staffing</b>, and hiring three people would not fix it on its own.</p>
+    </div>
+  </div>
+</section>
+
+<div class="cta">
+  <div class="wrap">
+    <h2>A forty hour week, three staff short, and a homepage whose main heading is missing a space.</h2>
+    <p>Only one of those is fixable this morning. It is still worth fixing.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    Prepared by Andrei Givero &middot; AG1 Consulting &middot; 30 September 2026, for Andrew Perridge at Transwarmer
+    Conservatories Ltd, 30 Hazel Way, Barwell, Leicestershire LE9 8GP.
+    <b>Every statement about transwarmerconservatories.co.uk was read directly from that site's own served pages,
+    structured data and published sitemaps on 30 September 2026 and is reproducible. Word counts exclude scripts and
+    markup. Items recorded as &ldquo;not found&rdquo; or &ldquo;none&rdquo; describe what a static read of the served
+    HTML returned and are NOT proof of absence &mdash; a tag fired by another script, or a form injected after page
+    load, would not appear in that read.</b>
+    <b>&#9888; Business details &mdash; three to five current staff, wanting three more, one to three clients a week
+    largely by word of mouth and referral, an average job value of &pound;10,000 to &pound;12,000, and the goal of
+    reducing a forty hour week &mdash; are as reported to Elijah on 30 September 2026 and have NOT been
+    independently verified by AG1.</b>
+    <b>&#9888; The observation about existing staff is reproduced from that briefing note as the business owner's
+    own account. It is NOT a finding by AG1 about any employee or contractor, and AG1 makes no statement about any
+    individual.</b>
+    <b>&#9888; No ranking, enquiry, call, booking, applicant, hire, working-hours or revenue outcome is promised,
+    forecast or guaranteed anywhere in this document, and no pricing is proposed in it.</b>
+    Product and company names, including SupaLite, TapcoSlate and SkyVista, are used for identification only and
+    belong to their respective owners.
+  </div>
+</footer>
+</body></html>
