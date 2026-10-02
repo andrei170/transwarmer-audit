@@ -102,7 +102,7 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
 .agnav a.ext:hover{color:#fff}
 @media(max-width:560px){.agnav .inner{padding:0 14px}.agnav a{padding:10px 9px;font-size:13px}}
 </style></head><body>
-<nav class="agnav"><div class="inner"><a href="./" class="on">Pre-Call Audit</a><a href="hours.html">Forty Hours To Ten</a></div></nav>
+<nav class="agnav"><div class="inner"><a href="assets.html">All Assets</a><a href="./" class="on">Pre-Call Audit</a><a href="hours.html">Forty Hours To Ten</a><a href="https://andrei170.github.io/transwarmer-demo/" class="ext">Concept Page</a></div></nav>
 <header>
   <div class="wrap">
     <div class="eyebrow">Pre-Call Audit &middot; Transwarmer Conservatories Ltd</div>
@@ -135,27 +135,41 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
 
 <section>
   <div class="wrap">
-    <div class="h">🔴 The Single Biggest Finding, And It Explains The Forty Hours</div>
+    <div class="h">🔴 Finding One: Your Homepage Is The Only Page Without A Way To Write To You</div>
     <div class="flag">
-      <div class="lab">🔴🔴 Your website has no enquiry form on it. Not one, on any page</div>
-      <p>We checked every page. <b>There are zero contact forms on transwarmerconservatories.co.uk and nine
-      separate links to your mobile number.</b> Your &ldquo;Get a Quote!&rdquo; button does not open a form &mdash;
-      it goes to your About and Contact page.</p>
-      <p>⭐⭐ <b>So every single enquiry you receive, from every source, arrives as a phone call to
-      07931&nbsp;340371.</b> Which is your personal mobile, which is presumably in your pocket, which means:</p>
-      <ul>
-        <li><b>You cannot be unavailable.</b> If you miss the call there is no second route &mdash; no form sitting
-        in an inbox waiting for you, and no email address a customer can be bothered to type.</li>
-        <li><b>Nobody else can handle an enquiry</b>, because it does not exist anywhere except on your phone.</li>
-        <li><b>Enquiries arrive while you are working</b>, on a roof or in a customer's conservatory, which is the
-        worst possible moment to take one well.</li>
-        <li><b>Nothing is written down.</b> No record of who called, what they wanted, what you quoted, or whether
-        you followed up.</li>
-      </ul>
-      <p>🔴 <b>You asked how to work ten hours a week instead of forty. A business where every enquiry must be
-      personally answered by the owner, by phone, cannot be run in ten hours. The structure forbids it.</b></p>
-      <p>⭐ <b>And this is the most fixable thing on this page.</b> It is a form, a routing rule and somewhere for
-      enquiries to live. <a href="hours.html" style="color:var(--accent)">The hours page</a> sets out the rest.</p>
+      <div class="lab">🔴 You have four enquiry forms. The busiest page is not one of them</div>
+      <p>We checked all fifteen addresses on your site. <b>You have a working enquiry form &mdash; name, email,
+      telephone and a message box &mdash; on four pages:</b> your About and Contact page, and all three product
+      pages (TapcoSlate, ExtraLight and SkyVista). ⭐ <b>That is better than we expected and better than most
+      firms we audit.</b></p>
+      <p>🔴 <b>But there is no form on your homepage, and none on your Recent Work page.</b> Those are almost
+      certainly your two most visited pages &mdash; the homepage because it is where everybody lands, and Recent
+      Work because it is what a wavering customer reads last before deciding.</p>
+      <p>⚠️ <b>And your &ldquo;Get a Quote!&rdquo; button does not open a form.</b> It sends people to your About
+      and Contact page and asks them to find it. <b>Every extra click between wanting to enquire and being able to
+      costs you some of the people who were going to.</b></p>
+      <p>Alongside that: <b>nine separate links to your mobile, 07931 340371, and no other telephone route.</b> So
+      the enquiries that do not use a form all arrive as a call to a phone that is presumably in your pocket while
+      you are working.</p>
+      <p>⭐ <b>The fix on the forms themselves is small &mdash; you already own the component, it simply needs to
+      be on the two pages that matter.</b> The larger question is what happens to a submission once it arrives,
+      and that is the one that bears on your forty hours. <a href="hours.html"
+      style="color:var(--accent)">The hours page</a> deals with it.</p>
+    </div>
+
+    <div class="flag" style="margin-top:16px">
+      <div class="lab">🔴 Finding Two: Your main heading is broken, and it is free to fix this morning</div>
+      <p>Your homepage opens a main heading tag and closes it with the wrong one &mdash; two headings are opened,
+      one is closed, and a closing tag for a different heading level is doing the job. <b>We verified this
+      directly in the page code.</b></p>
+      <p>⚠️ <b>What it does in practice: the paragraph underneath gets swallowed into your main heading.</b> That
+      is why your most important line of text reads as a run-on sentence to Google and to screen readers, even
+      though it looks fine to you on screen.</p>
+      <p>⚠️ <b>And there are no subheadings at all</b> across the whole homepage &mdash; nine hundred and
+      seventy-odd words in one undifferentiated block. Nothing tells a reader or a search engine what the sections
+      of your page are.</p>
+      <p>⭐ <b>This is a few minutes of work for whoever maintains the site and it costs nothing.</b> It is the
+      single cheapest item in this document.</p>
     </div>
   </div>
 </section>
@@ -177,7 +191,14 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
         <li><b>Benefits written for the customer, not the trade</b> &mdash; lower heating bills, cooler in summer,
         less rain noise, usable all year. ⭐ That is genuinely good copy and whoever wrote it understood the buyer.</li>
         <li><b>You have Google Analytics installed.</b> ⭐ You are ahead of most of this week's audits on that
-        alone &mdash; three of the four businesses we looked at have no measurement at all.</li>
+        alone &mdash; three of the four businesses we looked at have no measurement whatsoever.</li>
+        <li>⭐⭐ <b>Your local business markup is correct and complete</b> &mdash; your address, opening hours and
+        map coordinates are all properly published in the code where search engines read them. <b>We check this on
+        every audit and almost nobody has it.</b> Another firm we looked at this week has none of it.</li>
+        <li><b>An enquiry form on your contact page and on all three product pages</b>, each asking for a name,
+        email, telephone number and a message.</li>
+        <li><b>Nine tap-to-call links</b>, so ringing you from a phone actually works. ⭐ One of the other
+        businesses this week has none.</li>
         <li><b>A Recent Work page and a case study.</b></li>
         <li>⭐ <b>&ldquo;From the first time you contact us, you'll be treated with respect, instead of as a
         prospect.&rdquo;</b> That line is the best thing on your website. It is a real differentiator in a trade
@@ -192,16 +213,19 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
     <div class="h">The Rest Of The Problems</div>
 
     <div class="flag">
-      <div class="lab">⚠️ 1. Analytics is installed but nothing is being measured that matters</div>
-      <p>You have Google Analytics, which records visits. ⚠️ <b>But with no form to submit and no tracked click,
-      there is no conversion to count.</b> So you can see that people arrived and never that any of them became an
-      enquiry.</p>
-      <p>⭐ Once a form exists this becomes genuinely useful, and the tool is already there. <b>You are one
-      component away from being able to see your own funnel.</b></p>
+      <div class="lab">⚠️ 3. Analytics is installed but nothing is being measured that matters</div>
+      <p>You have Google Analytics, which records visits. ⚠️ <b>But we found no conversion tracking of any kind
+      &mdash; nothing recording a form submission, nothing recording a tap on your phone number, and no
+      advertising tag.</b></p>
+      <p>⭐ <b>So you can see that people arrived, and nothing about whether any of them enquired.</b> You have
+      four forms and no idea how many times they have been filled in, or from which page. <b>The tool is already
+      installed; it is simply not wired to anything that matters.</b></p>
+      <p>⚠️ <b>Which means &ldquo;where did that job come from?&rdquo; is currently answered from memory</b> &mdash;
+      and memory is the thing you are trying to take out of the business.</p>
     </div>
 
     <div class="flag" style="margin-top:16px">
-      <div class="lab">⚠️ 2. Your mobile is the business number, with no landline anywhere</div>
+      <div class="lab">⚠️ 4. Your mobile is the business number, with no landline anywhere</div>
       <p><b>07931 340371</b> is the only telephone number published. For a business selling
       &pound;10,000&ndash;&pound;12,000 installations with a ten year guarantee, <b>a mobile-only presence reads as
       a smaller and shorter-lived operation than thirty-five years of experience deserves.</b></p>
@@ -210,7 +234,7 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
     </div>
 
     <div class="flag" style="margin-top:16px">
-      <div class="lab">⚠️ 3. Thirty-five years of experience is mentioned once, in passing, near the bottom</div>
+      <div class="lab">⚠️ 5. Thirty-five years of experience is mentioned once, in passing, near the bottom</div>
       <p>The About section says <i>&ldquo;Our business operates on family values, drawing from more than 35 years
       of experience.&rdquo;</i></p>
       <p>⭐⭐ <b>Thirty-five years in a trade where firms appear and vanish inside three is your single strongest
@@ -219,7 +243,7 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
     </div>
 
     <div class="flag" style="margin-top:16px">
-      <div class="lab">⚠️ 4. No accreditation or scheme appears anywhere on the site</div>
+      <div class="lab">⚠️ 6. No accreditation or scheme appears anywhere on the site</div>
       <p>We found no mention of <b>FENSA</b>, <b>CERTASS</b>, <b>TrustMark</b>, <b>Checkatrade</b>, or any
       insurance-backed guarantee provider.</p>
       <p>⚠️ <b>This matters more in glazing than in most trades</b>, because the work touches Building Regulations
@@ -230,7 +254,7 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
     </div>
 
     <div class="flag" style="margin-top:16px">
-      <div class="lab">⚠️ 5. One to three clients a week, at the lower end, from referrals only</div>
+      <div class="lab">⚠️ 7. One to three clients a week, at the lower end, from referrals only</div>
       <p>You told us the volume varies and tends to the bottom of that range. <b>A business entirely dependent on
       word of mouth has no way to smooth that out</b> &mdash; referrals arrive when they arrive, and a quiet
       fortnight is invisible until it has already happened.</p>
@@ -314,8 +338,8 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
 
 <section class="cta">
   <div class="wrap">
-    <h2>Nine links to your mobile. Zero enquiry forms. One person able to take a job.</h2>
-    <p>That is not a marketing problem. It is the reason the week is forty hours.</p>
+    <h2>Four enquiry forms, and none of them on the page everybody lands on.</h2>
+    <p>The foundations are sound. What is missing is where things sit, and what happens after they arrive.</p>
   </div>
 </section>
 
@@ -324,11 +348,16 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
     Prepared by Andrei Givero &middot; AG1 Consulting &middot; 4 October 2026, for discussion with Andrew Perridge at
     Transwarmer Conservatories Ltd. <b>This is a discussion document, not a proposal or a statement of work, and
     nothing on it is priced.</b>
-    <b>&#9888; All website findings &mdash; the absence of any enquiry form, the nine telephone links, the
-    destination of the &ldquo;Get a Quote!&rdquo; button, the presence of Google Analytics and absence of other
-    tracking, the page count, the published mobile number and email address, and the absence of any trade scheme or
-    accreditation &mdash; were established by automated and manual read of transwarmerconservatories.co.uk on
+    <b>&#9888; All website findings &mdash; the location of the four enquiry forms and their absence from the
+    homepage and Recent Work page, the nine telephone links, the destination of the &ldquo;Get a Quote!&rdquo;
+    button, the unbalanced heading tags and absence of subheadings, the presence of Google Analytics and the
+    absence of conversion tracking or any advertising tag, the correct LocalBusiness markup, the page count, the
+    published mobile number and email address, and the absence of any trade scheme or accreditation &mdash; were
+    established by automated and manual read of all fifteen addresses on transwarmerconservatories.co.uk on
     2 October 2026 and describe that site as it stood on that date.</b>
+    <b>&#9888; The statement that the homepage and Recent Work page are the most visited pages on the site is
+    AG1'S ASSUMPTION based on how websites are normally used. AG1 has NO access to Transwarmer's analytics and does
+    not know which pages are most visited, how many people submit the forms, or from where.</b>
     <b>&#9888; The quotations about warm roofs, the ten year guarantee, &ldquo;Leicestershire's premier warm roof
     installer&rdquo;, family values, more than 35 years of experience and being treated &ldquo;with respect, instead
     of as a prospect&rdquo; are QUOTED FROM THE COMPANY'S OWN WEBSITE and have not been independently verified.</b>
